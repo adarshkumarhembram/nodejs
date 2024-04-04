@@ -13,3 +13,10 @@ fs.readFile('index.txt', function(err,data) {
 });
 
 console.log('other work');
+
+// synchronous way
+
+var data = fs.readFileSync('index.txt');
+console.log('Data:',data.toString());
+console.log('Read End');
+console.log('Other strff');
