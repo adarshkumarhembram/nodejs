@@ -20,3 +20,14 @@ var data = fs.readFileSync('index.txt');
 console.log('Data:',data.toString());
 console.log('Read End');
 console.log('Other strff');
+
+// Read > open + read
+
+fs.open("input.txt", "r",function(err, fd){
+    if(err){
+        console.log("Error in opening files:" ,err);
+
+    }
+    console.log("File open successfully");
+} )
+    
